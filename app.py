@@ -1,4 +1,3 @@
-app_code = """
 import streamlit as st
 import tensorflow as tf
 import pickle
@@ -11,12 +10,12 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import nltk
 nltk.download('stopwords')
 
+# Load model dan tokenizer
 model = tf.keras.models.load_model('sentiment_lstm_model.h5')
 with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 max_len = 200
-
 stop_words = set(stopwords.words('english'))
 stemmer = SnowballStemmer("english")
 
@@ -87,6 +86,3 @@ if not st.session_state.log_df.empty:
     if st.button("🗑️ Clear Log"):
         st.session_state.log_df = pd.DataFrame(columns=["Original Text", "Prediction", "Confidence"])
         st.success("Log has been cleared.")
-"""
-with open(f"{project_dir}/app.py", "w") as f:
-    f.write(app_code)
