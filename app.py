@@ -11,7 +11,7 @@ import nltk
 nltk.download('stopwords')
 
 # Load model dan tokenizer
-model = tf.keras.models.load_model('sentiment_lstm_model.h5')
+model = tf.keras.models.load_model('sentiment_model')
 with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
