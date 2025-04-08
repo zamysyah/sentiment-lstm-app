@@ -10,7 +10,7 @@ from nltk.stem import SnowballStemmer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load model (SavedModel format)
-model = tf.keras.models.load_model("sentiment_lstm_model")
+model = tf.keras.models.load_model("sentiment_lstm_model.keras")
 
 # Load tokenizer
 with open("tokenizer.pkl", "rb") as f:
