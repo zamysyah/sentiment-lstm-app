@@ -3,7 +3,7 @@
 Simple and stylish web app for **sentiment analysis** built using an **LSTM neural network** (TensorFlow/Keras) and deployed with **Streamlit Cloud**. It can classify text reviews into **Positive** or **Negative** sentiments and display detailed insights including confidence levels, text statistics, and a downloadable log.
 
 <p align="center">
-  <img src="https://github.com/zamysyah/sentiment-lstm-app/blob/main/preview_app.png" alt="App Preview" width="600">
+  <img src="https://github.com/zamysyah/sentiment-lstm-app/blob/main/Aplikasi_Review.png" alt="App Preview" width="600">
 </p>
 
 ---
